@@ -7,11 +7,20 @@
  }
  body{
     font-family: "League Spartan", sans-serif;
-    }
+    width: 90rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
  .Parent-Container{
-    border: 2px solid red;
     position: relative;
-    padding: 5rem;
+    width: 69.375rem;
+    /* width: 1110px; */
+ }
+ .users-stars {
+  display: flex;
  }
  .top-pattern{
     position: absolute;
@@ -31,12 +40,90 @@
  .Flex1{
     display: flex;
  }
- .Users{
+ .Users, .Stars{
     width: 50%;
  }
+
+ .Users p {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+ }
+
+ .Stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+
  .Rating{
     display: flex;
+    width: 27.8125rem;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 0.5rem;
  }
+
+ .Rating:nth-child(2){
+  align-self: center;
+ }
+
+ .Rating:nth-child(3) {
+  align-self: end;
+ }
+
+ .Cards {
+  display: flex;
+  margin-top: 5rem;
+  gap: 1.5rem;
+  height: 16.625rem;
+ }
+
+ .card {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  height: 14.625rem;
+ }
+
+ .card:nth-child(2) {
+  align-self: center;
+ }
+
+ .card:nth-child(3) {
+  align-self: end;
+ }
+
+ .Testimonial-name {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+ }
+
+ .images {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+ }
+
+ .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+ }
+
+ .Testimony {
+  margin-top: 2rem;
+ }
+
+ .Names p:nth-child(2) {
+  color:  hsl(333, 80%, 67%);
+ }
+
  .attribution {
    font-size: 11px;
    text-align: center;
