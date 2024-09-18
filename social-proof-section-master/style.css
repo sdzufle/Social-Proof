@@ -11,11 +11,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left: 0;border: 2px solid red;
-    background-image: url(./images/bg-pattern-top-desktop.svg); top: left;
-    
+    background-image: url(./images/bg-pattern-top-desktop.svg),url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 0vw 0vh,2vw 1vh;
   }
-
   .parent-container{
     position: relative;
     width: 69.375rem;   
