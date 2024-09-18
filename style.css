@@ -11,8 +11,13 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+
 }
-.parentcontainer
+.parent-container{
+  border: 2px solid red;
+  position: relative;
+}
 
       .attribution {
         font-size: 11px;
