@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,17 +12,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/bg-pattern-top-desktop.svg),url(./images/bg-pattern-bottom-desktop.svg);
-    background-repeat: no-repeat,no-repeat;
-    background-position: 0vw 0vh,2vw 1vh;
   }
-  .parent-container{
+  .Parent-Container{
     position: relative;
     width: 69.375rem;   
+    padding: 5rem;
+    margin-inline: auto;
+    border: 2px solid red;
   }
-  .users-stars{
+  .Users-stars{
     display: flex;
   }
+   
  .top-pattern{
     position: absolute;
     top: 0;
@@ -36,13 +38,15 @@ body{
     font-size: 3rem;
     font-weight: 700;
     color:hsl(300, 43%, 22%);
+    margin-bottom: 1rem;
  }
- .Flex1{
-    display: flex;
- }
+
  .Users, .Stars{
     width: 50%;
  }
+ .Users{
+  width: 50%;
+ } 
 
  .Users p {
   margin-top: 1rem;
@@ -64,6 +68,7 @@ body{
     gap: 1rem;
     background-color: hsl(300, 24%, 96%);
     border-radius: 0.5rem;
+    font-weight: 700;
  }
 
  .Rating:nth-child(2){
@@ -86,7 +91,7 @@ body{
   color: hsl(0, 0%, 100%);
   padding: 1.5rem;
   border-radius: 0.5rem;
-  height: 14.625rem;
+  height: 12.625rem;
  }
 
  .card:nth-child(2) {
@@ -117,7 +122,9 @@ body{
  }
 
  .Testimony {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.2rem;
  }
 
  .Names p:nth-child(2) {
