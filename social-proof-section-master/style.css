@@ -18,7 +18,6 @@ body{
     width: 69.375rem;   
     padding: 5rem;
     margin-inline: auto;
-    border: 2px solid red;
   }
   .Users-stars{
     display: flex;
@@ -73,10 +72,12 @@ body{
 
  .Rating:nth-child(2){
   align-self: center;
+  margin-left: 0.1rem;
  }
 
  .Rating:nth-child(3) {
   align-self: end;
+  margin-left: .6rem;
  }
 
  .Cards {
