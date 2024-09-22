@@ -13,7 +13,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 .Parent-Container {
   position: relative;
@@ -157,4 +156,82 @@ h1 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.mobile-display {
+  display: none;
+}
+
+/* mobile screen styling */
+@media screen and (max-width: 23.4375rem) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
+  .parent-container-wrapper {
+    width: 87vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h1, p {
+    text-align: center;
+  }
+
+  .Users p {
+    margin-bottom: 1rem;
+  }
+  .Parent-Container {
+    width: 23.4375rem;
+    min-height: 100vh;
+    display: block;
+    margin-block: 1rem;
+  }
+
+  .Users,
+  .Stars {
+    width: 100%;
+  }
+
+  .Rating,
+  .card {
+    width: 20.375rem;
+  }
+  .Rating:nth-child(2) {
+    align-self: start;
+  }
+
+  .Rating:nth-child(3) {
+    align-self: start;
+  }
+  .users-stars,
+  .Cards {
+    display: block;
+  }
+
+  .Rating {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .top-pattern,
+  .bottom-pattern {
+    display: none;
+  }
+
+  .Users p,
+  h1 {
+    width: 100%;
+  }
+
+  .Cards {
+    margin-top: 1rem;
+  }
+
+  .card:nth-child(2), .Rating:nth-child(2) {
+    margin-block: 1rem;
+  }
+
+  .mobile-display {
+    display: block;
+  }
 }
