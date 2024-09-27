@@ -7,20 +7,19 @@
  }
  body{
     font-family: "League Spartan", sans-serif;
-    width: 90rem;
-    height: 50rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-  }
+    justify-content: center;
+    width: 90rem;
+    height: 50rem;
+    
+    }
  .Parent-Container{
     position: relative;
+    /* padding: 5rem; */
     width: 69.375rem;
-    /* width: 1110px; */
- }
- .users-stars {
-  display: flex;
+    
  }
  .top-pattern{
     position: absolute;
@@ -37,93 +36,94 @@
     font-weight: 700;
     color:hsl(300, 43%, 22%);
  }
- .Flex1{
+ .users-stars{
     display: flex;
+
  }
- .Users, .Stars{
+ .Users{
     width: 50%;
  }
-
- .Users p {
-  margin-top: 1rem;
-  line-height: 1.5rem;
- }
-
- .Stars {
+ .Users p{
+   margin-top: 1rem;
+   line-height: 1.5rem;
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+}
+ .Stars{
+  width: 50%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
  }
-
  .Rating{
     display: flex;
+    gap: 1rem;
     width: 27.8125rem;
     height: 3.5rem;
+    background-color: hsl(300, 24%, 96%) ;
+    border-radius: .5rem;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    background-color: hsl(300, 24%, 96%);
-    border-radius: 0.5rem;
- }
-
+    font-weight: 700;
+    color:hsl(300, 43%, 22%);
+   }
+ 
  .Rating:nth-child(2){
-  align-self: center;
+   align-self: center;
  }
-
- .Rating:nth-child(3) {
-  align-self: end;
+ .Rating:nth-child(3){
+   align-self: end;
  }
-
- .Cards {
+ .Cards{
   display: flex;
+  /* gap: 1rem; */
+  justify-content: space-between;
   margin-top: 5rem;
-  gap: 1.5rem;
-  height: 16.625rem;
+  height: 16.6875rem;
+  
+ }
+ .card{
+   height: 14.75rem;
+   width: 21.875rem;
+   padding: 2.0625rem;
+   background-color: hsl(300, 43%, 22%);
+   color: hsl(0, 0%, 100%);
+   border-radius: .5rem;
+ }
+ .card:nth-child(2){
+   align-self: center;
+ }
+ .card:nth-child(3){
+   align-self: end;
+ }
+ .images{
+   height: 3rem;
+   width: 3rem;
+   border-radius: 50%;
+   overflow: hidden;
+ }
+ .images img{
+   width: 100%;
+   height: 100%;
+ }
+ .Names p:first-child{
+   font-weight: 700;
  }
 
- .card {
-  background-color: hsl(300, 43%, 22%);
-  color: hsl(0, 0%, 100%);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  height: 14.625rem;
+ .Names p:nth-child(2){
+   color: hsl(333, 80%, 67%)
  }
 
- .card:nth-child(2) {
-  align-self: center;
- }
-
- .card:nth-child(3) {
-  align-self: end;
- }
-
- .Testimonial-name {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
- }
-
- .images {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  overflow: hidden;
- }
-
- .images img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
- }
-
- .Testimony {
-  margin-top: 2rem;
- }
-
- .Names p:nth-child(2) {
-  color:  hsl(333, 80%, 67%);
- }
-
+.Testimonial-name{
+   padding-bottom: 1rem;
+   display: flex;
+   gap: 1rem;
+   font-weight: 700;
+   align-items: center;
+}
+.Testimony{
+   line-height: 1.5rem;
+}
  .attribution {
    font-size: 11px;
    text-align: center;
